@@ -144,6 +144,19 @@ FILE_HEADER = """<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Font</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwVFlUkbnVsbNQNDg8QERIT
+	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNALAAAAAAAABAQgAKAA15TRk1v
+	bm8tUmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250ohkbWE5TT2Jq
+	ZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zDxgAAAAAAAAEBAAAAAAAAABwAAAAA
+	AAAAAAAAAAAAAADP
+	</data>
+	<key>FontAntialias</key>
+	<true/>
+	<key>FontWidthSpacing</key>
+	<real>1.004032258064516</real>
 	<key>ProfileCurrentVersion</key>
 	<real>2.04</real>
 	<key>keyMapBoundKeys</key>
@@ -157,6 +170,23 @@ FILE_KEY_ACTION_ENTRY = """		<key>{}</key>
 FILE_FOOTER = """	</dict>
 	<key>name</key>
 	<string>Function Keys</string>
+	<key>noWarnProcesses</key>
+	<array>
+		<dict>
+			<key>ProcessName</key>
+			<string>screen</string>
+		</dict>
+		<dict>
+			<key>ProcessName</key>
+			<string>tmux</string>
+		</dict>
+		<dict>
+			<key>ProcessName</key>
+			<string>byobu</string>
+		</dict>
+	</array>
+	<key>shellExitAction</key>
+	<integer>1</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
