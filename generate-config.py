@@ -1,4 +1,4 @@
-#!env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Copyright 2015 Google Inc. All Rights Reserved.
 #
@@ -165,7 +165,7 @@ FILE_FOOTER = """	</dict>
 
 
 def main():
-    print "Key".ljust(7), "Action"
+    print("{} {}".format("Key".ljust(7), "Action"))
     f = open("Function Keys.terminal", "w")
     f.write(FILE_HEADER)
     for key in TERMINAL_APP_KEYS:
@@ -197,7 +197,7 @@ def main():
             assert xterm_key_code       # "\033O;5P"
             print_action = xterm_key_code.replace(u"\033", "\\033")
             assert print_action         # "\\033O;5P"
-            print (print_key_modifier + print_key_code).rjust(7), print_action
+            print("{} {}".format((print_key_modifier + print_key_code).rjust(7), print_action))
             entry_format = FILE_KEY_ACTION_ENTRY.format(
                 file_key_modifier + file_key_code, xterm_key_code)
             assert entry_format
