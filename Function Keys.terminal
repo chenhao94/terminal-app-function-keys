@@ -17,6 +17,8 @@
 	<real>1.004032258064516</real>
 	<key>ProfileCurrentVersion</key>
 	<real>2.04</real>
+	<key>StrictVTKeypad</key>
+	<false/>
 	<key>keyMapBoundKeys</key>
 	<dict>
 		<key>F704</key>

@@ -159,6 +159,8 @@ FILE_HEADER = """<?xml version="1.0" encoding="UTF-8"?>
 	<real>1.004032258064516</real>
 	<key>ProfileCurrentVersion</key>
 	<real>2.04</real>
+	<key>StrictVTKeypad</key>
+	<false/>
 	<key>keyMapBoundKeys</key>
 	<dict>
 """
